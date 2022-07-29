@@ -1,0 +1,62 @@
+body{
+    background-color: #151515;
+    font-family: 'Lato', sans-serif;
+    color: #ffff;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+#calcArguments, #square, #combine, #factorial, #numberСomparison{
+    width: 700px;
+    height: 250px;
+    background-color: #151515;
+    border: solid 5px;
+    border-image: 
+    linear-gradient(#ff512f, #dd2476, #1c64ff) 1;
+    animation: rotate 2.5s ease-in infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+@keyframes rotate{
+    50%{
+        border-image: 
+        linear-gradient(360deg, #ff512f, #dd2476, #1c64ff) 1;
+    }
+}
+
+.calcArguments_input, .square_input, .combine_input, .factorial_input, .numberСomparison_input{
+    display: flex;
+    gap: 20px;
+}
+
+.calcArguments_label, .square_label, .square_output, .combine_label, .combine_output, .factorial_label, .factorial_output, 
+.numberСomparison_label, .numberСomparison_output{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+output{
+    border: 1px solid #ff512f;
+    padding: 5px; 
+}
+
+#btncalcArguments, #btnNumberСomparison, #btnFactorial, #btnCombine, #btn{
+    font-size: 15px;
+    background-image: 
+    linear-gradient(30deg, #ff512f, #dd2476, #1c64ff);
+}
+
+#inputCalcArguments, #inputNumberСomparison1, #inputNumberСomparison2, #inputFactorial, #inputCombine1, #inputCombine2, #inputCombine3, #input1, #input2 {
+    background-color: #151515;
+    border: 1px solid #ff512f;
+    color: #ffff;
+}
